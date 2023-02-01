@@ -1,1 +1,4 @@
+!.gitkeep
 /vendor/
+coverage/*
+.phpunit.cache
