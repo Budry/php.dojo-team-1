@@ -11,6 +11,7 @@ class MainTest extends TestCase
     {
         $main = new Main();
         $this->assertEquals("3", $main->add("1,2"));
+		$this->assertEquals("0", $main->add(""));
     }
 
 }
