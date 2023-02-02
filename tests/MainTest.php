@@ -10,7 +10,7 @@ class MainTest extends TestCase
     public function testIndex(): void
     {
         $main = new Main();
-        $this->assertEquals(0, $main->index());
+        $this->assertEquals("3", $main->add("1,2"));
     }
 
 }

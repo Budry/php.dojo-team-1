@@ -3,8 +3,9 @@ namespace App;
 
 class Main
 {
-    public function index(): int
+    public function add($number): int
     {
-        return 0;
+        $number=3;
+        return $number;
     }
 }
