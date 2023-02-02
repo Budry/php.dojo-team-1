@@ -11,7 +11,12 @@ class Main
         }
 
         $parts = explode(",", $number);
+		$out = [];
 
-        return (string)array_sum($parts);
+		foreach ($parts as $part) {
+			$out = array_merge($out, explode("\n", $part));
+		}
+
+        return (string) array_sum($out);
     }
 }

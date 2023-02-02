@@ -16,7 +16,7 @@ class MainTest extends TestCase
         $this->assertEquals("9", $main->add("3,5,1"));
         $this->assertEquals("3.3", $main->add("1.1, 2.2"));
         $this->assertEquals("3.3", $main->add("1.1\n2.2"));
-
+		$this->assertEquals("Invalid input on pos: 3", $main->add("1.1,\n2.2"));
     }
 
 }
