@@ -1,11 +1,17 @@
 <?php
+
 namespace App;
 
 class Main
 {
     public function add($number): string
     {
-        $number="3";
-        return $number;
+        if ($number == "") {
+            return "0";
+        }
+
+        $parts = explode(",", $number);
+
+        return (string)array_sum($parts);
     }
 }

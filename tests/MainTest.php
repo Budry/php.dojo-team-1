@@ -12,6 +12,11 @@ class MainTest extends TestCase
         $main = new Main();
         $this->assertEquals("3", $main->add("1,2"));
 		$this->assertEquals("0", $main->add(""));
+        $this->assertEquals("8", $main->add("3,5"));
+        $this->assertEquals("9", $main->add("3,5,1"));
+        $this->assertEquals("3.3", $main->add("1.1, 2.2"));
+        $this->assertEquals("3.3", $main->add("1.1\n2.2"));
+
     }
 
 }
